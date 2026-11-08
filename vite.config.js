@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-const [owner, repository] = (process.env.GITHUB_REPOSITORY || '').split('/');
-const base = process.env.GITHUB_ACTIONS
-  ? repository === `${owner}.github.io` ? '/' : `/${repository}/`
+const base = process.env.GITHUB_PAGES
+  ? '/diwali-wishes/'
   : '/';
 
 export default defineConfig({
   plugins: [react()],
   base,
+  build: { outDir: 'docs', emptyOutDir: true },
 });
