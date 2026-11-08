@@ -1,0 +1,14 @@
+.welcome-diya{position:absolute;bottom:70px;left:50%;transform:translateX(-50%);width:184px;height:170px;border:0;background:transparent;padding:0;cursor:pointer;touch-action:manipulation;filter:drop-shadow(0 8px 18px #c77a3432)}
+.welcome-diya:focus-visible{outline:2px solid #b8955a;outline-offset:5px;border-radius:48%}
+.welcome-tap{position:absolute;top:0;left:50%;transform:translateX(-50%);white-space:nowrap;color:#8e6845;font:500 12px 'DM Sans',sans-serif;letter-spacing:.045em;z-index:3}
+.diya-halo{position:absolute;left:17px;right:17px;bottom:8px;height:112px;border-radius:50%;background:radial-gradient(ellipse,#ffc2587d 0%,#ee9b3a38 42%,transparent 73%);filter:blur(8px);animation:diya-halo-pulse 2.4s ease-in-out infinite alternate}
+.diya-bowl{position:absolute;left:30px;bottom:31px;width:124px;height:53px;border-radius:12px 12px 68px 68px;background:linear-gradient(180deg,#d99559 0%,#b96343 45%,#814139 100%);box-shadow:inset 0 8px 9px #f1c17e66,inset 0 -5px 8px #5e302b6b,0 8px 10px #682f2d22;clip-path:polygon(0 0,100% 0,91% 64%,74% 91%,50% 100%,26% 91%,9% 64%)}
+.diya-rim{position:absolute;left:27px;bottom:73px;width:130px;height:20px;border:3px solid #d6a060;border-radius:50%;background:linear-gradient(180deg,#ebc484,#9e4e3c);box-shadow:0 0 0 1px #7e4236}
+.diya-foot{position:absolute;left:64px;bottom:23px;width:56px;height:11px;background:linear-gradient(#b8754c,#85413a);border-radius:50%;box-shadow:0 3px 2px #69383233}
+.diya-wick{position:absolute;left:90px;bottom:86px;width:4px;height:17px;border-radius:3px;background:#674132;transform:rotate(8deg);z-index:1}
+.diya-flame{position:absolute;left:78px;bottom:96px;width:26px;height:43px;border-radius:70% 25% 65% 40%;transform:rotate(3deg);transform-origin:bottom center;background:radial-gradient(ellipse at 54% 68%,#fff8d6 0 13%,#ffe18a 24%,#ffad38 58%,#f17427 80%,transparent 82%);filter:drop-shadow(0 0 12px #ffb440);z-index:2;animation:diya-flame-flicker .34s ease-in-out infinite alternate}
+.diya-ornament{position:absolute;z-index:2;bottom:45px;left:0;right:0;color:#f3ca7f;font-size:10px;letter-spacing:.04em;text-shadow:0 1px 2px #703930}
+@keyframes diya-flame-flicker{from{transform:rotate(-5deg) scale(.94,.97)}to{transform:rotate(5deg) scale(1.04,1.02)}}
+@keyframes diya-halo-pulse{from{opacity:.72;transform:scale(.94)}to{opacity:1;transform:scale(1.08)}}
+@media(max-height:700px){.welcome-diya{bottom:46px;transform:translateX(-50%) scale(.84);transform-origin:bottom center}}
+@media(prefers-reduced-motion:reduce){.welcome-diya *{animation:none!important}}

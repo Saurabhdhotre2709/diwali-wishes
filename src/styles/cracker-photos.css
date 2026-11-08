@@ -1,0 +1,14 @@
+.cracker-button.cracker-anar,.cracker-button.cracker-chakri,.cracker-button.cracker-rocket,.cracker-button.cracker-ladi{position:relative;overflow:visible;width:112px;height:150px;min-width:112px;min-height:150px;filter:drop-shadow(0 8px 11px #735f5030)}
+.card-content.message-screen{animation:none}
+.card-content.message-screen{padding:76px 24px 78px}
+.message-screen .cracker-area{position:static;bottom:auto;flex:none;margin-top:16px}
+.card-content.source-hidden .cracker-button{opacity:0;pointer-events:none}
+.cracker-button.cracker-chakri{width:132px;height:112px;min-width:132px;min-height:112px}
+.cracker-button.cracker-rocket{width:118px;height:190px;min-width:118px;min-height:190px}
+.cracker-photo{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none;animation:crackerFloat 3s ease-in-out infinite alternate}
+.cracker-anar .anar-art,.cracker-chakri .chakri-art,.cracker-rocket .rocket-art,.cracker-ladi .ladi-art{display:none}
+.cracker-button:disabled .cracker-photo{animation-play-state:paused}
+.cracker-area{bottom:78px}
+.screen-rocket .message,.screen-final .message{font-size:clamp(11.5px,3.3vw,13px);line-height:1.45}
+@media(max-height:700px){.cracker-area{bottom:58px}}
+@keyframes crackerFloat{from{transform:translateY(1px) scale(.99)}to{transform:translateY(-2px) scale(1.015)}}
